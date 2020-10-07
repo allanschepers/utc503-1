@@ -16,5 +16,8 @@ $licenses=loadAndDump(DATA_LOCATION."licenses.json");
 arrayDump(getEmployeesByService($employees,'compta'),'Liste des employÃ©s de la compta');
 
 
+//Test Where
+arrayDump(where($employees,"service","dsi"),'Liste DSI');
+
 
 
